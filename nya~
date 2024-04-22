@@ -1,0 +1,22 @@
+#!/bin/python
+import colored
+import math
+
+def nya(uwu):
+	return (colored.Fore.rgb(math.floor(127*math.cos(uwu)+127),math.floor(127*math.cos(uwu-2/3*math.pi)+127),math.floor(127*math.cos(uwu+2/3*math.pi)+127)))
+a=0
+uwu=0
+while a==0:
+		try:
+			k=input()
+			owo=''
+			qwq=uwu
+			while len(k)>0:
+				owo=owo+nya(qwq)+k[0]
+				k=k[1:]
+				qwq=qwq+.1
+			uwu=uwu+.2
+			print(owo+colored.Style.reset)
+		except EOFError:
+			a=1
+
