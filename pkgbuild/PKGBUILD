@@ -1,7 +1,7 @@
 # Maintainer: qsqcqs
 pkgname='qtk'
 pkgver=mau
-pkgrel=1
+pkgrel=2
 pkgdesc="random qol stuff"
 arch=('x86_64')
 url="https://github.com/qsqcqs/qtk"
@@ -23,7 +23,7 @@ package() {
 	    install -Dm644 flynx "${pkgdir}"/usr/bin/flynx
 	    install -Dm644 stop "${pkgdir}"/usr/bin/stop
     install -Dm644 cont "${pkgdir}"/usr/bin/cont
-    install -Dm644 bin "${pkgdir}"/usr/bin/qtk/bin
+    install -dDm644 bin "${pkgdir}"/usr/bin/qtk/bin
     chmod +x "${pkgdir}"/usr/bin/zwnj
     chmod +x "${pkgdir}"/usr/bin/epscol
 	chmod +x "${pkgdir}"/usr/bin/nya~
@@ -37,4 +37,4 @@ package() {
 
 
 
-sha256sums=('eedb187b2f6fe5bb17b4b0b92a19173d29838991d5d54538886dfdb8d7ef3cfd')
+sha256sums=('13fb7a44f04efefce3dd0eb96f6508227be27375b1450efb5cc554115b7bb26e')
