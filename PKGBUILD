@@ -1,6 +1,6 @@
 # Maintainer: qsqcqs
 pkgname='qtk'
-pkgver=nya
+pkgver=mau
 pkgrel=1
 pkgdesc="random qol stuff"
 arch=('x86_64')
@@ -38,4 +38,4 @@ package() {
 
 
 
-sha256sums=('894fc24f16093e6e58acaa2e78711a782349da9dff6a7d4df5cdf29a52bfed43')
+sha256sums=('9aaed7c3d983cbf00c6617a7267002966574ea576f69d553eed2a1e952b897b6')
