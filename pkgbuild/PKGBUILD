@@ -1,7 +1,8 @@
 # Maintainer: qsqcqs
 pkgname='qtk'
 pkgver=mau
-pkgrel=2
+pkgrel=0
+epoch=1
 pkgdesc="random qol stuff"
 arch=('x86_64')
 url="https://github.com/qsqcqs/qtk"
