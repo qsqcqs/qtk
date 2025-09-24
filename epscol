@@ -1,0 +1,4 @@
+#!/bin/qtk/bin/python3
+
+import pyperclip
+pyperclip.copy('ε:')

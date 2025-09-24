@@ -1,0 +1,8 @@
+#!/home/qsqcqs/py/bin/python3 /bin/flynx
+import sys
+import urllib.parse
+import subprocess
+ustring=' '.join(sys.argv[2:])+" -ai"
+sstring=urllib.parse.quote_plus(ustring)
+qstr=("https://www.google.com/search?q="+sstring)
+subprocess.run(["lynx",qstr])

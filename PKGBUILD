@@ -16,7 +16,6 @@ validpgpkeys=()
 
 package() {
 	cd "$pkgname-$pkgver-$pkgrel"
-	mkdir "${pkgdir}"/usr/bin/qtk
     install -Dm644 zwnj "${pkgdir}"/usr/bin/zwnj
     install -Dm644 epscol "${pkgdir}"/usr/bin/epscol
 	install -Dm644 nya~ "${pkgdir}"/usr/bin/nya~

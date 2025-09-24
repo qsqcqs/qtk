@@ -1,0 +1,7 @@
+#!/bin/bash
+date +%s
+while [ a == a ]
+do
+t=`date +%s`
+echo [1A[9999999D$EPOCHREALTIME[0m
+done

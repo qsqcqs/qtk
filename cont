@@ -1,0 +1,4 @@
+#!/bin/bash
+ps -e | grep $1 | sed -E "s/\S*[a-zA-Z:?]\S*//g" | xargs kill -CONT
+
+
