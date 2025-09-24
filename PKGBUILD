@@ -16,15 +16,24 @@ validpgpkeys=()
 
 package() {
 	cd "$pkgname-$pkgver-$pkgrel"
-	
+	mkdir "${pkgdir}"/usr/bin/qtk
     install -Dm644 zwnj "${pkgdir}"/usr/bin/zwnj
     install -Dm644 epscol "${pkgdir}"/usr/bin/epscol
 	install -Dm644 nya~ "${pkgdir}"/usr/bin/nya~
-    install -Dm644 nyom~ "${pkgdir}"/usr/bin/nyom~
-	chmod +x "${pkgdir}"/usr/bin/zwnj
+	    install -Dm644 nyom~ "${pkgdir}"/usr/bin/nyom~
+	    install -Dm644 flynx "${pkgdir}"/usr/bin/flynx
+	    install -Dm644 stop "${pkgdir}"/usr/bin/stop
+    install -Dm644 cont "${pkgdir}"/usr/bin/cont
+    install -Dm644 bin "${pkgdir}"/usr/bin/qtk/bin
+    chmod +x "${pkgdir}"/usr/bin/zwnj
     chmod +x "${pkgdir}"/usr/bin/epscol
 	chmod +x "${pkgdir}"/usr/bin/nya~
     chmod +x "${pkgdir}"/usr/bin/nyom~
+   chmod +x "${pkgdir}"/usr/bin/stop
+   chmod +x "${pkgdir}"/usr/bin/cont
+   chmod +x "${pkgdir}"/usr/bin/flynx
+
+#add /bin/wifi sometime
 }
 
 
